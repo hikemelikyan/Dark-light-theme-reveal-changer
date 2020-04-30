@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/place_holder_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/styledBackgroundColor"
+            android:forceDarkAllowed="true">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="?attr/colorAccent"
+                android:text="Button 1 "
+                android:textColor="?attr/styledTextColor" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="?attr/colorPrimary"
+                android:text="Button 2"
+                android:textColor="?attr/styledTextColor" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="?attr/colorPrimaryDark"
+                android:text="Button 3"
+                android:textColor="?attr/styledTextColor" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="?attr/styledTintColor"
+                android:text="Checkbox text"
+                android:textColor="?attr/styledTextColor" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Light Mode"
+                android:textColor="?attr/styledTextColor" />
+
+            <Button
+                android:id="@+id/theme_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="?attr/colorAccent"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="Switch theme"
+                android:textColor="?attr/styledTextColor" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
